@@ -1,0 +1,16 @@
+.estructura-skeleton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5% 0;
+
+    .div-de-skeleton {
+        width: 32%;
+
+        .skeleto {
+            height: 210px;
+            margin: 0 0 14px 0;
+        }
+    }
+}

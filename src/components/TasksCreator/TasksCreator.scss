@@ -1,0 +1,99 @@
+.tasks-creator {
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    border: 0.2px solid var(--boton-hover);
+    margin: 30px 0 0 0;
+
+    .contenedor {
+        overflow: hidden;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        .inputs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            form {
+                width: 100%;
+                padding: var(--padding-tasks-creator);
+
+                .textarea-superior {
+                    margin: 0 0 20px 0;
+
+                    ::placeholder {
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .detalles-de-tarea {
+                width: 100%;
+                display: flex;
+                padding: 4px 10px;
+                display: flex;
+                justify-content: space-between;
+
+                .detalle-vencimiento {
+                    margin: 0 16px 0 0;
+
+                    .fecha-de-vencimiento{
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        label{
+                            color: var(--font-color-secundario);
+                            font-size: var(--font-size-principal);
+                            margin: 0 0 4px 0;
+                        }
+                        
+                        input{
+                            color: var(--font-color-secundario);
+                            border: 0.5px solid var(--boton-hover);
+                            border-radius: 8px;
+                            padding: 4px 8px;
+                            outline: none;
+                        }
+                    }
+                }
+
+                .detalle {
+                    width: fit-content;
+                    padding: 0px 2px;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        color: var(--font-color-secundario);
+                        font-size: var(--font-size-principal);
+                    }
+
+                    &:hover {
+                        transition: 0.2s;
+                        color: var(--color-principal);
+                    }
+                }
+            }
+
+            .acciones {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                border-top: 1px solid var(--boton-hover);
+                padding: 10px 6px 6px 6px;
+                margin: 8px 0 0 0;
+
+                .boton-de-agregacion{
+                    margin: 0 4px;
+                }
+            }
+        }
+    }
+}

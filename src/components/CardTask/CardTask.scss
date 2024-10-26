@@ -1,0 +1,140 @@
+.card-task {
+    width: 100%;
+    margin: 5% 0;
+
+    .contenedor {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding: 0 0 3% 0;
+
+        $white: #FFFFFF;
+        $gray-dark: #333;
+        $gray-medium: #555;
+        $gray-light: #888;
+        $high-priority-color: #F44336;
+        $shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .task-card {
+            background-color: $white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: $shadow;
+            margin-bottom: 15px;
+            width: 300px;
+
+            .task-title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $gray-dark;
+                line-height: 1.3;
+            }
+
+            .fecha-iconos {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .task-date {
+                    font-size: 0.9rem;
+                    color: $gray-light;
+                    margin-top: 5px;
+                }
+
+                .iconos-de-tarea {
+                    display: flex;
+                    align-items: center;
+
+                    .icono-check {
+                        color: #4CAF50;
+                        font-size: 1.2rem;
+                        cursor: pointer;
+                    }
+                    
+                    .icono-basura {
+                        cursor: pointer;
+                        margin: 0 0 0 10px;
+                        color: #F44336;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .task-description {
+                font-size: 1rem;
+                color: $gray-medium;
+                margin: 10px 0;
+                height: 68px;
+                overflow-y: auto;
+
+                &::-webkit-scrollbar {
+                    width: 6px;
+                    background: transparent;
+                }
+            }
+
+            .task-info {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                .priority {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    color: white;
+
+                    &.high {
+                        background-color: $high-priority-color;
+                    }
+                }
+
+                .status {
+                    display: flex;
+                    align-items: center;
+                    color: $gray-dark;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+// Medias queries
+@media (min-width: 480px) and (max-width: 767px) {
+    .card-task {
+        margin: 32px 0;
+
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            overflow: hidden;
+
+            .task-card {
+                width: 48%;
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .card-task {
+        margin: 30px 0;
+
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            overflow: hidden;
+            padding: 0 0 18px 0;
+
+            .task-card {
+                width: 98%;
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+}

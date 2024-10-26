@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  /* ---------------------------------- */
+  --fondo-dashborard: #fcfcf8;
+  --width-sidebar: 320px;
+  --fondo-hover: #e6e6e2;
+  --fondo-proyectos: #fff3d6;
+  --padding-dashborard: 16px 10px 16px 16px;
+  --color-principal: #d68400;
+  --fondo-selected: #fff3d6;
+  --font-color-principal: #202020;
+  --font-color-secundario: #808080;
+  --font-titulo-size: 28px;
+  --border-color-boton: #c0c0c083;
+  --boton-hover: #e0e0e0;
+  /* fonts-size */
+  --size-iconos: 24px;
+  --font-size-principal: 14px;
+  --titulo-size: 26px;
+  --size-iconos-chicos: 22px;
+  --font-size-texto: 16px;
+  /* color de login-register */
+  --color-login-register-uno: white;
+  --color-login-register-dos: #bf32da;
+  /* tasks-creator */
+  --padding-tasks-creator: 18px 10px 14px 10px;
+  /* boton-card */
+  --size-boton-card: "22px";
+  --width-medias-structure-header-mobile: 92%;
+  --width-medias-structure: 90%;
+  --apertura-mobile-dashboard: 80%;
+  /* padding modal mobile */
+  --width-modal-mobile: 0 4% 0 4%;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+body main {
+  width: 100%;
+  /* background-color: blue !important; */
+}
+
+/* ESTILOS BASE FUNDAMENTALES  */
+body {
+  background-color: var(--fondo-dashborard);
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+.cont {
+  display: flex;
+  background-color: white;
+  width: 100%;
+}
+
+.proximo {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 1.8% 0 0 0;
+  padding: 0;
+
+  .interior {
+    width: 50%;
+  }
+}
